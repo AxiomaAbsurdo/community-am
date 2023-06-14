@@ -2,6 +2,7 @@
 const nextConfig = {}
 
 // change config for gh actions deply settings for static Next Sites
+// Rebase 
 module.exports = {
     exportPathMap: function () {
       return {
