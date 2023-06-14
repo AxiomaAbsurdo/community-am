@@ -2,9 +2,9 @@
 const nextConfig = {}
 
 // change config for gh actions deply settings for static Next Sites
-// Rebase 
-module.exports = {
-    exportPathMap: function () {
+
+  module.exports = {
+    generateStaticParams: async function () {
       return {
         '/': { page: '/' },
         // Add other routes if needed
