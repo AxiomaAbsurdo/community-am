@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(123deg, #efd5ff 0%, #515ada 100%);
+}
+
+.imageContainer {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.linksList {
+  width: 100%;
+  max-width: 300px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.linksList li {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.linksList li a {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 1px solid orange;
+  transition: background-color 0.3s, color 1.7s;
+}
+
+.linksList li a:hover {
+  background-color: #ffffff;
+  color: #c500d0;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  
+  .imageContainer {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .linksContainer {
+    text-align: right;
+    margin-right: 0;
+  }
+  
+  .linksList li a {
+    width: auto;
+  }
+}
