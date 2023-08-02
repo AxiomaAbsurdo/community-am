@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaFileAlt, FaCalendarAlt } from "react-icons/fa";
 import styles from "../app/page.module.css";
 
 const Home = () => {
@@ -33,6 +33,11 @@ const Home = () => {
             <li>
               <Link href="https://drive.google.com/file/d/10-_scx_Llddhp4k7a3buYEkFmyBdBsTI/view?usp=sharing">
                 <FaFileAlt /> Guia Emprendedores
+              </Link>
+            </li>
+            <li>
+              <Link href="https://calendly.com/community_am/15min">
+                <FaCalendarAlt /> Agendá Asesoria
               </Link>
             </li>
           </ul>
