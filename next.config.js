@@ -10,5 +10,5 @@ const nextConfig = {}
         // Add other routes if needed
       };
     },
-    output: 'export',
+    // output: 'export',
   };
