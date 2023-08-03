@@ -1,16 +1,39 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Cummunity AM',
-  description: 'Not another guru about Digitil Marketing.',
+  title: 'Cummunity AM'
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="description" content="Master Marketing - Offering expert tips and insights for Marketing Analysts, Social Media Managers, Copywriters, and all digital marketing enthusiasts." />
+        <meta name="keywords" content="Marketing Analyst, Social Media Manager, Copywriting, Branding Tips, Digital Marketing, Marketing Blog" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
+
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+          async src="https://www.googletagmanager.com/gtag/js?id=G-CSBKCD60YL"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-CSBKCD60YL');;
+              `,
+          }}
+        />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   )
