@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin, FaFileAlt, FaCalendarAlt } from "react-icons/fa";
 import styles from "../app/page.module.css";
-import  Head from 'next/document'
+import Head from 'next/head'
 
 const Home = () => {
   return (
