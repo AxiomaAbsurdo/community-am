@@ -32,12 +32,12 @@ const Home = () => {
             </li>
             <li>
               <Link href="https://drive.google.com/file/d/10-_scx_Llddhp4k7a3buYEkFmyBdBsTI/view?usp=sharing">
-                <FaFileAlt /> Guia Emprendedores
+                <FaFileAlt /> Guía Emprendedores
               </Link>
             </li>
             <li>
               <Link href="https://calendly.com/community_am/15min">
-                <FaCalendarAlt /> Agendá Asesoria
+                <FaCalendarAlt /> Agendá una Asesoría
               </Link>
             </li>
           </ul>
