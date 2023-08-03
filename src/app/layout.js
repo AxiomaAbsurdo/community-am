@@ -5,14 +5,14 @@ import Head from 'next/head'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Cummunity AM'
+  title: 'Cummunity AM',
+  description: 'Master Marketing - Offering expert tips and insights for Marketing Analysts, Social Media Managers, Copywriters, and all digital marketing enthusiasts'
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <meta name="description" content="Master Marketing - Offering expert tips and insights for Marketing Analysts, Social Media Managers, Copywriters, and all digital marketing enthusiasts." />
         <meta name="keywords" content="Marketing Analyst, Social Media Manager, Copywriting, Branding Tips, Digital Marketing, Marketing Blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
-          async src="https://www.googletagmanager.com/gtag/js?id=G-CSBKCD60YL"
+          async src="https://www.googletagmanager.com/gtag/js?id=G-0EBNMYZKGQ"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
-                gtag('config', 'G-CSBKCD60YL');;
+                gtag('config', 'G-0EBNMYZKGQ');;
               `,
           }}
         />
