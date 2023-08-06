@@ -10,8 +10,14 @@ const Home = () => {
       <div className={styles.imageContainer}>
         <Image
           src="profile_image_am_2.jpeg"
-          sizes="(width:100%),(height:100%)"
           alt="Profile"
+          className="object-cover"
+          style={{
+            width: 100%,
+            height: 100%,
+            object-fit: cover,
+            border-radius: 50%,
+          }}
         />
       </div>
       <div className={styles.linksContainer}>
