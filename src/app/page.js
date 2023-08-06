@@ -9,7 +9,7 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.imageContainer}>
         <Image
-          src="profile_image_am_1.jpeg"
+          src="../public/profile_image_am_1.jpeg"
           alt="Profile"
           className="object-cover"
           layout="fill"
