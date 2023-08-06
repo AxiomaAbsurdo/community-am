@@ -14,10 +14,8 @@ const Home = () => {
           className="object-cover"
           layout="fill"
           objectFit="cover"
-          style={{
-            width: 100%,
-            height: 100%,
-          }}
+          width={100}
+          height={100}
         />
       </div>
       <div className={styles.linksContainer}>
