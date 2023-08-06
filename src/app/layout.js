@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Script from "next/script"
-import * as gtag from "../app/utils/analytics"
+import * as analytics from "../app/utils/analytics"
 
 const inter = Inter({ subsets: ['latin'] })
 
