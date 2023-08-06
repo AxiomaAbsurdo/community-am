@@ -8,14 +8,10 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image
+      <img
           src="profile_image_am_1.jpeg"
           alt="Profile"
-          className="object-cover"
-          layout="fill"
-          objectFit="cover"
-          width={100}
-          height={100}
+          className={styles.profileImage}
         />
       </div>
       <div className={styles.linksContainer}>
