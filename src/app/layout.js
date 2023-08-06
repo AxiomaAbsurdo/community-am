@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import Script from "next/script"
+import * as gtag from "../app/utils/analytics"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,18 +21,23 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
 
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async src="https://www.googletagmanager.com/gtag/js?id=G-CSBKCD60YL"
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${analytics.GA_TRACKING_ID}`}
         />
-        <script
+
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-CSBKCD60YL');;
-              `,
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${analytics.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
           }}
         />
       </Head>
