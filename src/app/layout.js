@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
-
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <Script
+      </Head>
+       {/* Global Site Tag (gtag.js) - Google Analytics */}
+       <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${analytics.GA_TRACKING_ID}`}
         />
@@ -40,7 +40,6 @@ export default function RootLayout({ children }) {
           `,
           }}
         />
-      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   )
