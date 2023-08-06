@@ -10,9 +10,7 @@ const Home = () => {
       <div className={styles.imageContainer}>
         <Image
           src="profile_image_am_2.jpeg"
-          width={100}
-          height={100}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw, (width:100%), (height:100%) "
+          sizes="(width:100%),(height:100%)"
           alt="Profile"
         />
       </div>
